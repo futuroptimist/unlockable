@@ -1,0 +1,91 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Unlockable">
+	<main>
+		<h1><a href="/"><span class="text-gradient">Unlockable</span></a></h1>
+		<p class="instructions">
+			<strong>Unlockable</strong> will be a tool you can use to create, use, and distribute quests. The first instance of a game that will take advantage of this is <a class="button" href="https://democratized.space" target="_blank">DSPACE</a>, a web3 space exploration game. Like DSPACE, Unlockable will be open source. For more information about the upcoming release of Unlockable, follow <a class="button twitter" href="https://twitter.com/dspacegame" target="_blank">DSPACE</a> on Twitter.
+		</p>
+	</main>
+</Layout>
+
+<style>
+	:root {
+		background-color: hsl(249, 9%, 15%);
+	}
+
+	main {
+		margin: auto;
+		padding: 1.5rem;
+		max-width: 60ch;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+		text-align: center;
+	}
+	a {
+		text-decoration: none;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		line-height: 1.6;
+		margin: 1rem 0;
+		border: 1px solid rgba(var(--accent), 25%);
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.4rem;
+	}
+	.instructions code {
+		font-size: 0.875em;
+		font-weight: bold;
+		background: rgba(var(--accent), 12%);
+		color: rgb(var(--accent));
+		border-radius: 4px;
+		padding: 0.3em 0.45em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+	.button {
+		background-color: green;
+		color: white;
+		padding: 2px;
+		padding-left: 5px;
+		padding-right: 5px;
+		border-radius: 20px;
+		text-decoration: none;
+		opacity: 0.8;
+		white-space: nowrap;
+		
+	}
+	.button:hover {
+		opacity: 1;
+	}
+	.youtube {
+		background-color: rgb(255, 19, 19);
+	}
+	.twitter {
+		background-color: #1DA1F2;
+		color: white;
+	}
+	.unlockable {
+		background-color: rgb(107, 16, 107);
+	}
+</style>
